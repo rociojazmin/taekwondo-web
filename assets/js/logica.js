@@ -1,15 +1,15 @@
 
-var myCarousel = document.querySelector('#mycarousel')
+// Carousel
+
+var mycarousel = document.querySelector('#mycarousel');
 var carousel = new bootstrap.Carousel(mycarousel, {
-    items : 6,
-    pagination : true,
-    paginationSpeed : 1000,
-    navigation : true,
-    slideSpeed : 800,
+    interval: 6000,
 });
 
-//////////////
 
+
+
+// Animacion Fade-in
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -20,7 +20,5 @@ const observer = new IntersectionObserver(entries => {
         }
     })
 });
-
-console.log(observer);
 
 observer.observe(document.querySelector(".contenedor-animacion"));
