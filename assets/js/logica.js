@@ -35,43 +35,58 @@ observer.observe(document.querySelector(".contenedor-animacion"));
 
 // Switch
 
-var nombre = "Calaiego";
-var genero = "h";//"m", "otro"
+// var nombre = "Calaiego";
+// var genero = "h";//"m", "otro"
 
-var prefijo;
-switch (genero) {
-    case "h":
-        prefijo = "Señor";
-        break;
-    case "m":
-        prefijo = "Señora";
-        break;
-    default:
-        prefijo = "Hola";
-        break;
-}
+// var prefijo;
+// switch (genero) {
+//     case "h":
+//         prefijo = "Señor";
+//         break;
+//     case "m":
+//         prefijo = "Señora";
+//         break;
+//     default:
+//         prefijo = "Hola";
+//         break;
+// }
 
-var mensaje = prefijo +  " " + nombre + ", ya enviamos tu solicitud...";
-console.log(mensaje);
+// var mensaje = prefijo +  " " + nombre + ", ya enviamos tu solicitud...";
+// console.log(mensaje);
 
 
 // Formulario
+var datos = new Array();
 
 function enviarFormulario() {
-    var nombre = document.getElementById("contacto_nombre").value.trim();
-    // var telefono = document.getElementById("contacto_telefono").value;
+        var nombre = document.getElementById("contacto_nombre").value.trim();
+        var mail = document.getElementById("contacto_email").value;
+        var cumpleanos = document.getElementById("contacto_cumple").value;
+        var telefono = document.getElementById("contacto_telefono").value;
+        var consulta = document.getElementById("contacto_consulta").value.trim();
+        datos.push(nombre, mail, cumpleanos, telefono, consulta);
+        
+    
+    console.log(datos);
 
-    var datos = [nombre, //telefono
-    ];
+
     
     // poner el switch de señor/a
     
-    alert(datos);
+ 
 
 
     // mostrar el modal
 }
 
+// var capturar= function enviarFormulario(){
+//     let primero = document.getElementsByClassName("formulario"), arrayGuardad = [];
+//     for (var i = 0; i < primero.length; i++) {
+//         arrayGuardad[i] = primero[i].value;
+//         console.log (primero[i].value);
+        
+//     }
+// }
 
 
 // Generador de imagenes

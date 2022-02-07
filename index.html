@@ -154,43 +154,43 @@
             <form class="container-md w-75 align-center d-flex flex-column">
                 <h2 class="h3 primera-mayus pb-3">completá con tus <span class="text-danger">datos:</span></h2>
                 <article class="mb-4 d-flex ">
-                    <label for="email" class="form-label w-25 primera-mayus mx-3 my-1">nombre
+                    <label for="nombre" class="form-label w-25 primera-mayus mx-3 my-1 ">nombre
                         completo:</label>
                     <input id="contacto_nombre" type="text" class="form-control rounded-0"
                         placeholder="escribe aquí tu nombre y apellido...">
                 </article>
-                <!-- <article class=" mb-4 d-flex">
+                <article class=" mb-4 d-flex">
 
                     <label for="email" class="form-label w-25  primera-mayus mx-3 my-1">dirección de
                         correo
                         electrónico:
                     </label>
-                    <input type="email" class="form-control rounded-0 " id="email" aria-describedby="emailHelp"
+                    <input id="contacto_email" type="email" class="form-control rounded-0"
                         placeholder="escribe aquí tu dirección de correo electrónico...">
-
                 </article>
                 <article class="mb-4 d-flex">
                     <label for="birthday" class="text-color-form form-label w-25 primera-mayus mx-3 my-1">fecha de
                         nacimiento:</label>
-                    <input type="date" class="form-control rounded-0" id="fechadenacimiento" name="fechadenacimiento">
+                    <input id="contacto_cumple" type="date" class="form-control rounded-0" id="fechadenacimiento"
+                        name="fechadenacimiento">
                 </article>
                 <article class="mb-4 d-flex">
                     <label for="birthday" class="text-color-form  w-25 primera-mayus mx-3 my-1">teléfono:</label>
-                    <input type="tel" class="form-control rounded-0" id="phone" name="phone"
+                    <input id="contacto_telefono" type="tel" class="form-control rounded-0" name="phone"
                         placeholder="escribe aquí tu número telefónico... ">
                 </article>
                 <article class="mb-4 d-flex">
                     <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">tu consulta:</label>
-                    <textarea class="form-control rounded-0" rows="3"
+                    <textarea id="contacto_consulta" class="form-control rounded-0" rows="3"
                         placeholder="escribe aquí tu consulta..."></textarea>
                 </article>
-                <article class="mb-4 form-check d-flex ">
-                    <input type="checkbox" class="form-check-input mx-2" id="recordarme">
+                <!-- <article class="mb-4 form-check d-flex ">
+                    <input id="contacto_recibir_info" type="checkbox" class="form-check-input mx-2" id="recordarme">
                     <label class="form-check-label primera-mayus" for="recordarme">acepto recibir información a mi
                         casilla de correo
                         electrónico</label>
                 </article> -->
-                <button type="button" class="btn btn-primary primera-mayus w-25"
+                <button value="enviarFormulario" type="button" class="btn btn-primary primera-mayus w-25"
                     onclick="enviarFormulario()">enviar</button>
             </form>
             <!-- FIN DEL FORMULARIO -->
