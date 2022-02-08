@@ -82,10 +82,14 @@ function enviarFormulario() {
     // poner el switch de señor/a
     
  
+// mostrar el modal
 
-
-    // mostrar el modal
+    setTimeout(() => {
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        myModal.show();
+    }, 200);
 }
+
 
 // var capturar= function enviarFormulario(){
 //     let primero = document.getElementsByClassName("formulario"), arrayGuardad = [];

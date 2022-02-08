@@ -193,12 +193,24 @@
                     <input type="radio" id="otro" class="form-check-input rounded-0" name="genero">
                     <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">otro</label>
                 </article>
-                <!-- <article class="mb-4 form-check d-flex ">
-                    <input id="contacto_recibir_info" type="checkbox" class="form-check-input mx-2" id="recordarme">
-                    <label class="form-check-label primera-mayus" for="recordarme">acepto recibir información a mi
-                        casilla de correo
-                        electrónico</label>
-                </article> -->
+                <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <button value="enviarFormulario" type="button" class="btn btn-primary primera-mayus w-25"
                     onclick="enviarFormulario()">enviar</button>
             </form>
