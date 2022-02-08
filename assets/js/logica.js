@@ -126,7 +126,7 @@ function generate(){
         "El limite es mental"
     ]
     var rand_first = Math.floor(Math.random()*firstname.length); 
-    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p class='mt-5'>"+firstname[rand_first]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>Sumate a Taekwondo Eita!</figcaption></figure>";
+    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>"+firstname[rand_first]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>Sumate a Taekwondo Eita!</figcaption></figure>";
 }
 
 // var Q = frases.length;
