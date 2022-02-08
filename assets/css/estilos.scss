@@ -71,7 +71,6 @@
 
 
 .fadeinleft {
-    background-image: url(https://images.unsplash.com/photo-1503914068268-5413b35b45ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
     -webkit-animation: fadeinleft 1.2s both;
     -moz-animation: fadeinleft 1.2s both;
     -o-animation: fadeinleft 1.2s both;
@@ -91,7 +90,6 @@
 }
 
 .fadeintop {
-    background-image: url(https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
     -webkit-animation: fadeintop 1.2s both;
     -moz-animation: fadeintop 1.2s both;
     -o-animation: fadeintop 1.2s both;
@@ -111,7 +109,6 @@
 }
 
 .fadeinright {
-    background-image: url(https://images.unsplash.com/photo-1529245856630-f4853233d2ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
     -webkit-animation: fadeinright 1.2s both;
     -moz-animation: fadeinright 1.2s both;
     -o-animation: fadeinright 1.2s both;
@@ -146,10 +143,6 @@
 
 }
 
-.primera-mayus {
-    text-transform: lowercase;
-}
-
 .primera-mayus:first-letter {
     text-transform: uppercase;
 }
@@ -160,4 +153,8 @@
 
 .widhtFotos {
     width: 18rem;
+}
+
+.fs-7 {
+    font-size: .95rem !important;
 }

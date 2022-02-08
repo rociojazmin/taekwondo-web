@@ -12021,7 +12021,6 @@ fieldset:disabled .btn {
 }
 
 .fadeinleft {
-  background-image: url(https://images.unsplash.com/photo-1503914068268-5413b35b45ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
   -webkit-animation: fadeinleft 1.2s both;
   animation: fadeinleft 1.2s both;
 }
@@ -12053,7 +12052,6 @@ fieldset:disabled .btn {
 }
 
 .fadeintop {
-  background-image: url(https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
   -webkit-animation: fadeintop 1.2s both;
   animation: fadeintop 1.2s both;
 }
@@ -12085,7 +12083,6 @@ fieldset:disabled .btn {
 }
 
 .fadeinright {
-  background-image: url(https://images.unsplash.com/photo-1529245856630-f4853233d2ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
   -webkit-animation: fadeinright 1.2s both;
   animation: fadeinright 1.2s both;
 }
@@ -12131,10 +12128,6 @@ fieldset:disabled .btn {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.primera-mayus {
-  text-transform: lowercase;
-}
-
 .primera-mayus:first-letter {
   text-transform: uppercase;
 }
@@ -12145,5 +12138,9 @@ fieldset:disabled .btn {
 
 .widhtFotos {
   width: 18rem;
+}
+
+.fs-7 {
+  font-size: .95rem !important;
 }
 /*# sourceMappingURL=estilos.css.map */
