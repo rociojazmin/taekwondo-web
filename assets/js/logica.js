@@ -103,6 +103,39 @@ var imagenes = [
     "https://images.unsplash.com/photo-1550759774-a027cb60b309?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
 ];
 
+// var frases = [
+//     "Empeza hoy",
+//     "Sumate",
+//     "El limite es mental"
+// ]
+
+// function generate(){
+//     var frases = [
+//         "Empeza hoy",
+//         "Sumate",
+//         "El limite es mental"
+//     ];
+//     var frases_random = Math.floor(Math.random()*frases.length);
+//     document.getElementById('result').innerHTML = "<h1 class='h2'>" + frases[frases_random] + "</h1>"
+//     console.log(result);
+// }
+
+function generate(){
+    var firstname = [ "Empeza hoy",
+        "Sumate",
+        "El limite es mental"
+    ]
+    var rand_first = Math.floor(Math.random()*firstname.length); 
+    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p class='mt-5'>"+firstname[rand_first]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>Sumate a Taekwondo Eita!</figcaption></figure>";
+}
+
+// var Q = frases.length;
+
+// var numAleatorio=Math.round(Math.random()*(Q-1));
+
+// function mostrarFrases() {
+//     document.write(frases[numAleatorio]);}
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
