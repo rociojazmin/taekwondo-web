@@ -57,20 +57,28 @@ observer.observe(document.querySelector(".contenedor-animacion"));
 
 // Formulario
 var datos = new Array();
-
+var pronombre;
 function enviarFormulario() {
         var nombre = document.getElementById("contacto_nombre").value.trim();
         var mail = document.getElementById("contacto_email").value;
         var cumpleanos = document.getElementById("contacto_cumple").value;
         var telefono = document.getElementById("contacto_telefono").value;
         var consulta = document.getElementById("contacto_consulta").value.trim();
-        datos.push(nombre, mail, cumpleanos, telefono, consulta);
+
+        if (document.getElementById("femenino").checked){
+            pronombre="Señora";
+        }else if (document.getElementById("masculino").checked){
+                pronombre = "Señor"
+            }
+        else {
+            document.getElementById("otro").checked
+            pronombre=" ";
+        }
+        datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
         
     
     console.log(datos);
 
-
-    
     // poner el switch de señor/a
     
  
