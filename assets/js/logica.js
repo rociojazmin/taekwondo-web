@@ -25,13 +25,6 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector(".contenedor-animacion"));
 
 
-// Modal
-
-// setTimeout(() => {
-//     var myModal = new bootstrap.Modal(document.getElementById('myModal'), options);
-//     myModal.show();
-// }, 5000);
-
 
 // Switch
 
@@ -76,29 +69,30 @@ function enviarFormulario() {
         }
         datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
         
-    
+
     console.log(datos);
 
-    // poner el switch de señor/a
-    
+    // poner el switch de señor/a nomesale :p
+        // switch(pronombre)
+    // {
+    //     case document.getElementById("femenino").checked:
+    //            pronombre="Señora";
+    //            break;
+    //     case document.getElementById("masculino").checked:
+    //                pronombre = "Señor";
+    //                break;
+    //     case document.getElementById("otro").checked:
+    //          pronombre=" ";
+    //          break;
+    // }
+    // datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
  
 // mostrar el modal
-
-    setTimeout(() => {
+     setTimeout(() => {
         var myModal = new bootstrap.Modal(document.getElementById('myModal'));
         myModal.show();
     }, 200);
 }
-
-
-// var capturar= function enviarFormulario(){
-//     let primero = document.getElementsByClassName("formulario"), arrayGuardad = [];
-//     for (var i = 0; i < primero.length; i++) {
-//         arrayGuardad[i] = primero[i].value;
-//         console.log (primero[i].value);
-        
-//     }
-// }
 
 
 // Generador de imagenes
