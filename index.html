@@ -21,7 +21,7 @@
     <header>
 
         <!-- NAVBAR -->
-        <section class="container-fluid w-100 fondo">
+        <section class="container-fluid w-100 fondo" id="inicio">
             <nav class="opacity-100 navbar navbar-expand-lg navbar-dark  mucho-padding ">
                 <section class="container-md fondo-nav mb-0 pb-0">
                     <a class="navbar-brand" href="#">
@@ -35,11 +35,12 @@
 
                     <article class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Sedes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                            <li class="nav-item primera-mayus"><a class="nav-link" href="#inicio">inicio</a></li>
+                            <li class="nav-item primera-mayus"><a class="nav-link" href="#mycarousel">sedes</a></li>
+                            <li class="nav-item primera-mayus"><a class="nav-link" href="#nosotros">nosotros</a></li>
+                            <li class="nav-item primera-mayus"><a class="nav-link" href="#animate">animate</a></li>
+                            <li class="nav-item primera-mayus"><a class="nav-link" href="#contactanos">contáctanos</a>
+                            </li>
                         </ul>
                     </article>
                 </section>
@@ -151,7 +152,7 @@
 
 
         <!-- FORMULARIO -->
-        <section class="container-md  mx-5 my-5 w-100">
+        <section class="container-md  mx-5 my-5 w-100" id="contactanos">
             <h1 class="h1 text-center text-danger mb-3 todo-mayus">contáctanos</h1>
 
             <form class="container-md w-75 align-center d-flex flex-column">
@@ -226,7 +227,7 @@
 
 
         <!-- EFECTO DE ANIMACION -->
-        <section class="bg-danger container-fluid w-100 ps-5 rounded-lg">
+        <section class="bg-danger container-fluid w-100 ps-5 rounded-lg" id="nosotros">
             <div class="row align-items-center">
                 <div>
                     <img src="assets/img/logo_eita.png" class="mx-auto d-block mt-3" width="150">
@@ -276,7 +277,7 @@
 
 
         <!-- GENERADOR DE CONTENIDOS ALEATORIOS -->
-        <section class="container-md my-4 d-flex justify-content-center">
+        <section class="container-md my-4 d-flex justify-content-center" id="animate">
             <article class="container-md w-100 text-center">
                 <p id="result"></p>
                 <img src="" id="imagenAlAzar" class="img-fluid">
@@ -284,6 +285,8 @@
         </section>
         <!-- FIN DEL GENERADOR DE CONTENIDOS ALEATORIOS -->
     </main>
+
+    <!-- INICIO DEL FOOTER -->
     <footer class="py-5  bg-danger">
         <div class="container-fluid row">
 
@@ -370,6 +373,7 @@
         </script>
         <script src="assets/js/logica.js"></script>
     </footer>
+    <!-- FIN DEL FOOTER -->
 </body>
 
 </html>

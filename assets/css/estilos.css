@@ -12117,6 +12117,7 @@ fieldset:disabled .btn {
   background-repeat: repeat;
   background-image: url(../img/background-navbar.jpg);
   background-position: top center;
+  background-attachment: fixed;
 }
 
 .mucho-padding {
