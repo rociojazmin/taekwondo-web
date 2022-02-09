@@ -11957,6 +11957,22 @@ fieldset:disabled .btn {
   }
 }
 
+#inicio {
+  background-repeat: repeat;
+  background-image: url(../img/background-navbar.jpg);
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+#padding-navbar {
+  padding-top: 20em;
+  padding-bottom: 0;
+}
+
+#fondo-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .carousel-item {
   height: 32rem;
   background: black;
@@ -12113,22 +12129,6 @@ fieldset:disabled .btn {
   }
 }
 
-.fondo {
-  background-repeat: repeat;
-  background-image: url(../img/background-navbar.jpg);
-  background-position: top center;
-  background-attachment: fixed;
-}
-
-.mucho-padding {
-  padding-top: 20em;
-  padding-bottom: 0;
-}
-
-.fondo-nav {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .primera-mayus:first-letter {
   text-transform: uppercase;
 }
@@ -12151,5 +12151,9 @@ fieldset:disabled .btn {
 
 .blockquote-footer::after {
   content: "\2014\00A0";
+}
+
+.logo-navbar {
+  width: 75;
 }
 /*# sourceMappingURL=estilos.css.map */
