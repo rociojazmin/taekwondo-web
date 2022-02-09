@@ -11980,7 +11980,7 @@ fieldset:disabled .btn {
   position: relative;
 }
 
-.container {
+.container-carousel {
   position: absolute;
   bottom: 0;
   left: 0;
