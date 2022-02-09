@@ -162,3 +162,11 @@ $blockquote-footer-font-size:1.3em;
 .fs-7 {
     font-size: .95rem !important;
 }
+
+.footerArt {
+    width: 15%;
+}
+
+.blockquote-footer::after {
+    content: "\2014\00A0";
+}
