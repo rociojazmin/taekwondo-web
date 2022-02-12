@@ -112,13 +112,21 @@ $carousel-indicator-active-bg:red;
     height: 9.5em;
 }
 
-.bg-card {
+#nosotros-cards article {
+    width: 18rem;
     background-color: rgba($color: #ffd862, $alpha: 1.0);
 }
 
 
+// .fotos-nosotros {
+//     width: 18rem;
+// }
+
+
+
+
 .text-shadow {
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -190,9 +198,7 @@ $carousel-indicator-active-bg:red;
     text-transform: uppercase;
 }
 
-.widhtFotos {
-    width: 18rem;
-}
+
 
 .fs-7 {
     font-size: .95rem !important;

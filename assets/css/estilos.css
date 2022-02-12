@@ -12044,12 +12044,13 @@ fieldset:disabled .btn {
   height: 9.5em;
 }
 
-.bg-card {
+#nosotros-cards article {
+  width: 18rem;
   background-color: #ffd862;
 }
 
 .text-shadow {
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .fadeinleft {
@@ -12151,10 +12152,6 @@ fieldset:disabled .btn {
 
 .todo-mayus {
   text-transform: uppercase;
-}
-
-.widhtFotos {
-  width: 18rem;
 }
 
 .fs-7 {
