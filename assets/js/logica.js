@@ -7,8 +7,6 @@ var carousel = new bootstrap.Carousel(mycarousel, {
 });
 
 
-
-
 // Animacion Fade-in
 
 const observer = new IntersectionObserver(entries => {

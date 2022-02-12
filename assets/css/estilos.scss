@@ -113,23 +113,11 @@ $carousel-indicator-active-bg:red;
 }
 
 #nosotros-cards article {
-    width: 18rem;
+    width: 18em;
     background-color: rgba($color: #ffd862, $alpha: 1.0);
 }
 
-
-// .fotos-nosotros {
-//     width: 18rem;
-// }
-
-
-
-
-.text-shadow {
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-}
-
-
+// NOSOTROS: animacion
 
 .fadeinleft {
     -webkit-animation: fadeinleft 1.2s both;
@@ -188,6 +176,10 @@ $carousel-indicator-active-bg:red;
     }
 }
 
+
+.text-shadow {
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
 
 
 .primera-mayus:first-letter {

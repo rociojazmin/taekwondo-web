@@ -12045,12 +12045,8 @@ fieldset:disabled .btn {
 }
 
 #nosotros-cards article {
-  width: 18rem;
+  width: 18em;
   background-color: #ffd862;
-}
-
-.text-shadow {
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .fadeinleft {
@@ -12144,6 +12140,10 @@ fieldset:disabled .btn {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.text-shadow {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .primera-mayus:first-letter {
