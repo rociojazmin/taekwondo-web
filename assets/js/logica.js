@@ -22,7 +22,42 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector(".contenedor-animacion"));
 
+// GENERADOR:
 
+// Generador de imagenes
+
+var imagenes = [
+    "https://images.unsplash.com/photo-1550759808-37c78fb8f1e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80",
+    "https://images.unsplash.com/photo-1541836567455-2d41eb6dd9b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1518&q=80",
+    "https://images.unsplash.com/photo-1550759774-a027cb60b309?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+];
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+var imagenElegida = imagenes[getRandomInt(imagenes.length)];
+console.log(imagenElegida);
+document.getElementById("imagenAlAzar").src = imagenElegida;
+
+// Generador de frases
+
+function generate(){
+    var frases = [ "Si caíste ayer, ponte en pie hoy",
+        "La fortaleza no llega de la capacidad física. Llega de una voluntad indomable",
+        "La manera más efectiva de hacerlo, es hacerlo",
+        "Puedo, luego existo",
+        "Si vas paso a paso y con confianza, puedes llegar lejos",
+        "Hoy haré los que otros no harán, para mañana conseguir los que otros no pueden",
+        "Si tienes miedo de fallar, probablemente falles",
+        "Gana si puedes, pierde si es necesario, pero ¡nunca abandones!",
+        "Tu mayor oponente no es la otra persona. Es la naturaleza humana",
+        "Los ganadores nunca se rinden y los que se rinden nunca ganan",
+        "Para aprender a triunfar primero tienes que aprender a fallar"
+        ]
+    var frase_random = Math.floor(Math.random()*frases.length); 
+    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>"+frases[frase_random]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
+}
 
 // Switch
 
@@ -93,13 +128,6 @@ function enviarFormulario() {
 }
 
 
-// Generador de imagenes
-
-var imagenes = [
-    "https://images.unsplash.com/photo-1550759808-37c78fb8f1e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80",
-    "https://images.unsplash.com/photo-1541836567455-2d41eb6dd9b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1518&q=80",
-    "https://images.unsplash.com/photo-1550759774-a027cb60b309?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-];
 
 // var frases = [
 //     "Empeza hoy",
@@ -118,14 +146,7 @@ var imagenes = [
 //     console.log(result);
 // }
 
-function generate(){
-    var firstname = [ "Empeza hoy",
-        "Sumate",
-        "El limite es mental"
-    ]
-    var rand_first = Math.floor(Math.random()*firstname.length); 
-    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>"+firstname[rand_first]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>Sumate a Taekwondo Eita!</figcaption></figure>";
-}
+
 
 // var Q = frases.length;
 
@@ -134,10 +155,3 @@ function generate(){
 // function mostrarFrases() {
 //     document.write(frases[numAleatorio]);}
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-
-var imagenElegida = imagenes[getRandomInt(imagenes.length)];
-console.log(imagenElegida);
-document.getElementById("imagenAlAzar").src = imagenElegida;
