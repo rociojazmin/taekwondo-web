@@ -59,29 +59,8 @@ function generate(){
     document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>"+frases[frase_random]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
 }
 
-// Switch
-
-// var nombre = "Calaiego";
-// var genero = "h";//"m", "otro"
-
-// var prefijo;
-// switch (genero) {
-//     case "h":
-//         prefijo = "Señor";
-//         break;
-//     case "m":
-//         prefijo = "Señora";
-//         break;
-//     default:
-//         prefijo = "Hola";
-//         break;
-// }
-
-// var mensaje = prefijo +  " " + nombre + ", ya enviamos tu solicitud...";
-// console.log(mensaje);
-
-
 // Formulario
+
 var datos = new Array();
 var pronombre;
 function enviarFormulario() {
@@ -93,6 +72,8 @@ function enviarFormulario() {
 
     var genero = document.querySelector('input[name="genero"]:checked').value;
     var cuerpoConsulta = "";
+
+ // switch genero
     switch (genero) {
         case "el":
             cuerpoConsulta = `Señor ${nombre}, su consulta se envio con exito!`;
@@ -116,31 +97,4 @@ function enviarFormulario() {
     }, 200);
 }
 
-
-
-// var frases = [
-//     "Empeza hoy",
-//     "Sumate",
-//     "El limite es mental"
-// ]
-
-// function generate(){
-//     var frases = [
-//         "Empeza hoy",
-//         "Sumate",
-//         "El limite es mental"
-//     ];
-//     var frases_random = Math.floor(Math.random()*frases.length);
-//     document.getElementById('result').innerHTML = "<h1 class='h2'>" + frases[frases_random] + "</h1>"
-//     console.log(result);
-// }
-
-
-
-// var Q = frases.length;
-
-// var numAleatorio=Math.round(Math.random()*(Q-1));
-
-// function mostrarFrases() {
-//     document.write(frases[numAleatorio]);}
 
