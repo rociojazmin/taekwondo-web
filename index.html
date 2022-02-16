@@ -182,17 +182,16 @@
         </section>
         <!-- FIN DE EFECTO DE ANIMACION -->
 
-        <!-- GENERADOR DE CONTENIDOS ALEATORIOS -->
 
+        <!-- GENERADOR DE CONTENIDOS ALEATORIOS -->
         <section class="container-md justify-content-center d-flex py-5" id="motivate">
             <article>
                 <img src="" id="imagenAlAzar" class="img-fluid">
                 <p class="texto-encima texto-encima-centrado" id="result"></p>
             </article>
         </section>
-
-
         <!-- FIN DEL GENERADOR DE CONTENIDOS ALEATORIOS -->
+
 
         <!-- FORMULARIO -->
         <section class="container-md  mx-5 my-5 w-100" id="contactanos">
@@ -235,11 +234,14 @@
                 </article>
                 <article class="mb-4 d-flex">
                     <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">pronombre:</label>
-                    <input type="radio" id="femenino" class="form-check-input rounded-0" name="genero">
+
+                    <input type="radio" id="femenino" class="form-check-input rounded-0" name="genero" value="ella">
                     <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">ella</label>
-                    <input type="radio" id="masculino" class="form-check-input rounded-0" name="genero">
+
+                    <input type="radio" id="masculino" class="form-check-input rounded-0" name="genero" value="el">
                     <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">el</label>
-                    <input type="radio" id="otro" class="form-check-input rounded-0" name="genero">
+
+                    <input type="radio" id="otro" class="form-check-input rounded-0" name="genero" value="otro">
                     <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">otro</label>
                 </article>
                 <!-- modal -->
@@ -252,7 +254,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </article>
                             <article class="modal-body primera-mayus">
-                                su consulta se envió con éxito!
+                                <p id="cuerpo-consulta"></p>
                             </article>
                             <article class="modal-footer">
                                 <button type="button" class="btn btn-secondary primera-mayus"

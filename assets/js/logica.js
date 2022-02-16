@@ -85,44 +85,33 @@ function generate(){
 var datos = new Array();
 var pronombre;
 function enviarFormulario() {
-        var nombre = document.getElementById("contacto_nombre").value.trim();
-        var mail = document.getElementById("contacto_email").value;
-        var cumpleanos = document.getElementById("contacto_cumple").value;
-        var telefono = document.getElementById("contacto_telefono").value;
-        var consulta = document.getElementById("contacto_consulta").value.trim();
+    var nombre = document.getElementById("contacto_nombre").value.trim();
+    var mail = document.getElementById("contacto_email").value;
+    var cumpleanos = document.getElementById("contacto_cumple").value;
+    var telefono = document.getElementById("contacto_telefono").value;
+    var consulta = document.getElementById("contacto_consulta").value.trim();
 
-        if (document.getElementById("femenino").checked){
-            pronombre="Señora";
-        }else if (document.getElementById("masculino").checked){
-                pronombre = "Señor"
-            }
-        else {
-            document.getElementById("otro").checked
-            pronombre=" ";
-        }
-        datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
-        
+    var genero = document.querySelector('input[name="genero"]:checked').value;
+    var cuerpoConsulta = "";
+    switch (genero) {
+        case "el":
+            cuerpoConsulta = `Señor ${nombre}, su consulta se envio con exito!`;
+            break;
+        case "ella":
+            cuerpoConsulta = `Señora ${nombre}, su consulta se envio con exito!`;
+            break;
+        default:
+            cuerpoConsulta = `${nombre}, su consulta se envio con exito!`;
+            break;
+    }
 
+    datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
     console.log(datos);
 
-    // poner el switch de señor/a nomesale :p
-        // switch(pronombre)
-    // {
-    //     case document.getElementById("femenino").checked:
-    //            pronombre="Señora";
-    //            break;
-    //     case document.getElementById("masculino").checked:
-    //                pronombre = "Señor";
-    //                break;
-    //     case document.getElementById("otro").checked:
-    //          pronombre=" ";
-    //          break;
-    // }
-    // datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
- 
-// mostrar el modal
+    // Mostrar el modal
      setTimeout(() => {
         var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        document.getElementById("cuerpo-consulta").innerText = cuerpoConsulta;
         myModal.show();
     }, 200);
 }
