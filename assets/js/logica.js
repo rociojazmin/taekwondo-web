@@ -12,7 +12,7 @@ var carousel = new bootstrap.Carousel(mycarousel, {
 const observer = new IntersectionObserver(entries => {
     for (let i = 0; i < entries.length; i++) {
         const entry = entries[i];
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             document.querySelectorAll(".animado")[0].classList.add("fadeinleft");
             document.querySelectorAll(".animado")[1].classList.add("fadeintop");
             document.querySelectorAll(".animado")[2].classList.add("fadeinright");
@@ -42,8 +42,8 @@ document.getElementById("imagenAlAzar").src = imagenElegida;
 
 // Generador de frases
 
-function generate(){
-    var frases = [ "Si caíste ayer, ponte en pie hoy",
+function generate() {
+    var frases = ["Si caíste ayer, ponte en pie hoy",
         "La fortaleza no llega de la capacidad física. Llega de una voluntad indomable",
         "La manera más efectiva de hacerlo, es hacerlo",
         "Puedo, luego existo",
@@ -54,9 +54,9 @@ function generate(){
         "Tu mayor oponente no es la otra persona. Es la naturaleza humana",
         "Los ganadores nunca se rinden y los que se rinden nunca ganan",
         "Para aprender a triunfar primero tienes que aprender a fallar"
-        ]
-    var frase_random = Math.floor(Math.random()*frases.length); 
-    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>"+frases[frase_random]+"</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
+    ]
+    var frase_random = Math.floor(Math.random() * frases.length);
+    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>" + frases[frase_random] + "</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
 }
 
 // Formulario
@@ -69,11 +69,12 @@ function enviarFormulario() {
     var cumpleanos = document.getElementById("contacto_cumple").value;
     var telefono = document.getElementById("contacto_telefono").value;
     var consulta = document.getElementById("contacto_consulta").value.trim();
+    var suscribirse = document.getElementById("contacto_checkbox").checked;
 
     var genero = document.querySelector('input[name="genero"]:checked').value;
     var cuerpoConsulta = "";
 
- // switch genero
+    // switch genero
     switch (genero) {
         case "el":
             cuerpoConsulta = `Señor ${nombre}, su consulta se envio con exito!`;
@@ -85,12 +86,16 @@ function enviarFormulario() {
             cuerpoConsulta = `${nombre}, su consulta se envio con exito!`;
             break;
     }
-
+    if (suscribirse) {
+        cuerpoConsulta += "\nTe enviaremos las últimas novedades de Taekwondo EITA!"
+    } else {
+        cuerpoConsulta += "\nTe invitamos a suscribirte para recibir las últimas novedades de Taekwondo EITA!"
+    }
     datos.push(nombre, mail, cumpleanos, telefono, consulta, pronombre);
     console.log(datos);
 
     // Mostrar el modal
-     setTimeout(() => {
+    setTimeout(() => {
         var myModal = new bootstrap.Modal(document.getElementById('myModal'));
         document.getElementById("cuerpo-consulta").innerText = cuerpoConsulta;
         myModal.show();
