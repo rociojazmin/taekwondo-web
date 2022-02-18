@@ -180,104 +180,157 @@
                 </article>
             </section>
         </section>
-        <!-- FIN DE EFECTO DE ANIMACION -->
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-4 text-center">
+                    One of two columns
+                </div>
+                <div class="col-4 text-center">
+                    One of two columns
+                </div>
+                <div class="col-4 text-center">
+                    One of two columns
+                </div>
+            </div>
 
-
-        <!-- GENERADOR DE CONTENIDOS ALEATORIOS -->
-        <section class="container-md justify-content-center d-flex py-5" id="motivate">
-            <article>
-                <img src="" id="imagenAlAzar" class="img-fluid">
-                <p class="texto-encima texto-encima-centrado" id="result"></p>
-            </article>
-        </section>
-        <!-- FIN DEL GENERADOR DE CONTENIDOS ALEATORIOS -->
-
-
-        <!-- FORMULARIO -->
-        <section class="container-md  mx-5 my-5 w-100" id="contactanos">
-            <h1 class="h1 text-center text-danger mb-3 todo-mayus">contáctanos</h1>
-
-            <form class="container-md w-75 align-center d-flex flex-column">
-                <h2 class="h3 primera-mayus pb-3">completá con tus <span class="text-danger">datos:</span></h2>
-                <!-- inicio de inputs -->
-                <article class="mb-4 d-flex ">
-                    <label for="nombre" class="form-label w-25 primera-mayus mx-3 my-1 ">nombre
-                        completo:</label>
-                    <input id="contacto_nombre" type="text" class="form-control rounded-0"
-                        placeholder="escribe aquí tu nombre y apellido...">
-                </article>
-                <article class=" mb-4 d-flex">
-
-                    <label for="email" class="form-label w-25  primera-mayus mx-3 my-1">dirección de
-                        correo
-                        electrónico:
-                    </label>
-                    <input id="contacto_email" type="email" class="form-control rounded-0"
-                        placeholder="escribe aquí tu dirección de correo electrónico...">
-                </article>
-                <article>
-                    <label for="checkbox" class=" small form-check-label
-                     primera-mayus ms-3 me-1 mt-0 mb-3"> Acepta recibir
-                        información semanal al mail</label>
-                    <input type="checkbox" id="contacto_checkbox" class="form-check-label rounded-0 align-items-start">
-
-                </article>
-                <article class="mb-4 d-flex">
-                    <label for="birthday" class="text-color-form form-label w-25 primera-mayus mx-3 my-1">fecha de
-                        nacimiento:</label>
-                    <input id="contacto_cumple" type="date" class="form-control rounded-0" id="fechadenacimiento"
-                        name="fechadenacimiento">
-                </article>
-                <article class="mb-4 d-flex">
-                    <label for="birthday" class="text-color-form  w-25 primera-mayus mx-3 my-1">teléfono:</label>
-                    <input id="contacto_telefono" type="tel" class="form-control rounded-0" name="phone"
-                        placeholder="escribe aquí tu número telefónico... ">
-                </article>
-                <article class="mb-4 d-flex">
-                    <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">tu
-                        consulta:</label>
-                    <textarea id="contacto_consulta" class="form-control rounded-0" rows="3"
-                        placeholder="escribe aquí tu consulta..."></textarea>
-                </article>
-                <article class="mb-4 d-flex">
-                    <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">pronombre:</label>
-
-                    <input type="radio" id="femenino" class="form-check-input rounded-0" name="genero" value="ella"
-                        checked>
-                    <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">ella</label>
-
-                    <input type="radio" id="masculino" class="form-check-input rounded-0" name="genero" value="el">
-                    <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">el</label>
-
-                    <input type="radio" id="otro" class="form-check-input rounded-0" name="genero" value="otro">
-                    <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">otro</label>
-                </article>
-                <!-- modal -->
-                <section class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
-                    <section class="modal-dialog">
-                        <article class="modal-content">
-                            <article class="modal-header">
-                                <h5 class="modal-title primera-mayus" id="myModalLabel">contacto</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </article>
-                            <article class="modal-body primera-mayus">
-                                <p id="cuerpo-consulta"></p>
-                            </article>
-                            <article class="modal-footer">
-                                <button type="button" class="btn btn-secondary primera-mayus"
-                                    data-bs-dismiss="modal">continuar</button>
-                            </article>
+            <section class="container">
+                <section class="row justify-content-around" id="nosotros-cards">
+                    <article class="card animado col-12 col-sm-6 col-md-4 text-center">
+                        <article class="card-body">
+                            <img src="assets/img/01.jpg" class="card-img-top img-fluid" alt="...">
+                            <p class="card-text primera-mayus fs-7">Nuestra escuela se caracteriza por
+                                pretender que
+                                todos aquellos que lo deseen puedan aprender taekwondo. Entendiendo la diversidad como
+                                un aporte valioso por si mismo.</p>
                         </article>
-                    </section>
+                    </article>
+                    <article class="card animado col-12 col-sm-6 col-md-4 text-center">
+                        <img src="assets/img/02.jpg" class="card-img-top img-fluid" alt="...">
+                        <article class="card-body">
+                            <p class="card-text primera-mayus fs-7"> contamos con instructores con una carrera mayor a
+                                12
+                                años abocados a la enseñanza de este arte marcial. Tanto para niños desde los 4 años
+                                como para adolescentes o adultos sin límite de edad.</p>
+                        </article>
+                    </article>
+                    <article class="card animado col-12 col-md-4 text-center">
+                        <img src="assets/img/03.jpg" class="card-img-top" alt="...">
+                        <article class="card-body">
+                            <p class="card-text fs-7 primera-mayus mb-0">para los infantiles, la enseñanza de la
+                                disciplina
+                                es en gran parte
+                                través de
+                                actividades lúdicas.
+                            </p>
+                            <p class="card-text fs-7 primera-mayus">
+                                en adultos, realizamos ejercicios
+                                adaptados a las posibilidades
+                                de cada practicante.</p>
+                        </article>
+                    </article>
                 </section>
-                <!-- boton de enviado -->
-                <button value="enviarFormulario" type="button"
-                    class="btn btn-primary d-grid gap-2 col-6 mx-auto primera-mayus w-25"
-                    onclick="enviarFormulario()">enviar</button>
-            </form>
-        </section>
-        <!-- FIN DEL FORMULARIO -->
+            </section>
+            <!-- FIN DE EFECTO DE ANIMACION -->
+
+
+            <!-- GENERADOR DE CONTENIDOS ALEATORIOS -->
+            <section class="container-md justify-content-center d-flex py-5" id="motivate">
+                <article>
+                    <img src="" id="imagenAlAzar" class="img-fluid">
+                    <p class="texto-encima texto-encima-centrado" id="result"></p>
+                </article>
+            </section>
+            <!-- FIN DEL GENERADOR DE CONTENIDOS ALEATORIOS -->
+
+
+            <!-- FORMULARIO -->
+            <section class="container-md  mx-5 my-5 w-100" id="contactanos">
+                <h1 class="h1 text-center text-danger mb-3 todo-mayus">contáctanos</h1>
+
+                <form class="container-md w-75 align-center d-flex flex-column">
+                    <h2 class="h3 primera-mayus pb-3">completá con tus <span class="text-danger">datos:</span></h2>
+                    <!-- inicio de inputs -->
+                    <article class="mb-4 d-flex ">
+                        <label for="nombre" class="form-label w-25 primera-mayus mx-3 my-1 ">nombre
+                            completo:</label>
+                        <input id="contacto_nombre" type="text" class="form-control rounded-0"
+                            placeholder="escribe aquí tu nombre y apellido...">
+                    </article>
+                    <article class=" mb-4 d-flex">
+
+                        <label for="email" class="form-label w-25  primera-mayus mx-3 my-1">dirección de
+                            correo
+                            electrónico:
+                        </label>
+                        <input id="contacto_email" type="email" class="form-control rounded-0"
+                            placeholder="escribe aquí tu dirección de correo electrónico...">
+                    </article>
+                    <article>
+                        <label for="checkbox" class=" small form-check-label
+                     primera-mayus ms-3 me-1 mt-0 mb-3"> Acepta recibir
+                            información semanal al mail</label>
+                        <input type="checkbox" id="contacto_checkbox"
+                            class="form-check-label rounded-0 align-items-start">
+
+                    </article>
+                    <article class="mb-4 d-flex">
+                        <label for="birthday" class="text-color-form form-label w-25 primera-mayus mx-3 my-1">fecha
+                            de
+                            nacimiento:</label>
+                        <input id="contacto_cumple" type="date" class="form-control rounded-0" id="fechadenacimiento"
+                            name="fechadenacimiento">
+                    </article>
+                    <article class="mb-4 d-flex">
+                        <label for="birthday" class="text-color-form  w-25 primera-mayus mx-3 my-1">teléfono:</label>
+                        <input id="contacto_telefono" type="tel" class="form-control rounded-0" name="phone"
+                            placeholder="escribe aquí tu número telefónico... ">
+                    </article>
+                    <article class="mb-4 d-flex">
+                        <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">tu
+                            consulta:</label>
+                        <textarea id="contacto_consulta" class="form-control rounded-0" rows="3"
+                            placeholder="escribe aquí tu consulta..."></textarea>
+                    </article>
+                    <article class="mb-4 d-flex">
+                        <label for="form-control"
+                            class="text-color-form w-25 primera-mayus mx-3 my-1">pronombre:</label>
+
+                        <input type="radio" id="femenino" class="form-check-input rounded-0" name="genero" value="ella"
+                            checked>
+                        <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">ella</label>
+
+                        <input type="radio" id="masculino" class="form-check-input rounded-0" name="genero" value="el">
+                        <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">el</label>
+
+                        <input type="radio" id="otro" class="form-check-input rounded-0" name="genero" value="otro">
+                        <label for="form-control" class="text-color-form w-25 primera-mayus mx-3 my-1">otro</label>
+                    </article>
+                    <!-- modal -->
+                    <section class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <section class="modal-dialog">
+                            <article class="modal-content">
+                                <article class="modal-header">
+                                    <h5 class="modal-title primera-mayus" id="myModalLabel">contacto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </article>
+                                <article class="modal-body primera-mayus">
+                                    <p id="cuerpo-consulta"></p>
+                                </article>
+                                <article class="modal-footer">
+                                    <button type="button" class="btn btn-secondary primera-mayus"
+                                        data-bs-dismiss="modal">continuar</button>
+                                </article>
+                            </article>
+                        </section>
+                    </section>
+                    <!-- boton de enviado -->
+                    <button value="enviarFormulario" type="button"
+                        class="btn btn-primary d-grid gap-2 col-6 mx-auto primera-mayus w-25"
+                        onclick="enviarFormulario()">enviar</button>
+                </form>
+            </section>
+            <!-- FIN DEL FORMULARIO -->
     </main>
 
 
