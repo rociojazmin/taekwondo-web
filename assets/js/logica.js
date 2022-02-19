@@ -27,13 +27,12 @@ observer.observe(document.querySelector(".contenedor-animacion"));
 // Generador de imagenes
 
 var imagenes = [
-    "assets/img/rocio2 copia.jpg",
-    "assets/img/rocio3 copia.jpg",
-    "assets/img/rocio5 copia.jpg",
-    "assets/img/rocio6 copia.jpg",
-    "assets/img/rocio1 copia.jpg",
-    "assets/img/rocio4 copia.jpg"
-
+    "assets/img/azar-1.jpg",
+    "assets/img/azar-2.jpg",
+    "assets/img/azar-3.jpg",
+    "assets/img/azar-4.jpg",
+    "assets/img/azar-5.jpg",
+    "assets/img/azar-6.jpg"
 ];
 
 function getRandomInt(max) {
