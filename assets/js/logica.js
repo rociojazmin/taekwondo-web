@@ -27,9 +27,13 @@ observer.observe(document.querySelector(".contenedor-animacion"));
 // Generador de imagenes
 
 var imagenes = [
-    "https://images.unsplash.com/photo-1550759808-37c78fb8f1e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80",
-    "https://images.unsplash.com/photo-1541836567455-2d41eb6dd9b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1518&q=80",
-    "https://images.unsplash.com/photo-1550759774-a027cb60b309?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+    "assets/img/rocio2 copia.jpg",
+    "assets/img/rocio3 copia.jpg",
+    "assets/img/rocio5 copia.jpg",
+    "assets/img/rocio6 copia.jpg",
+    "assets/img/rocio1 copia.jpg",
+    "assets/img/rocio4 copia.jpg"
+
 ];
 
 function getRandomInt(max) {
@@ -56,7 +60,7 @@ function generate() {
         "Para aprender a triunfar primero tienes que aprender a fallar"
     ]
     var frase_random = Math.floor(Math.random() * frases.length);
-    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p>" + frases[frase_random] + "</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
+    document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p class='w-auto'>" + frases[frase_random] + "</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
 }
 
 // Formulario

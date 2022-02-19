@@ -10,7 +10,7 @@ $carousel-dark-caption-color:red;
 $carousel-indicator-active-bg:red;
 
 // variables generador de contenidos
-$blockquote-font-size: 3.5em;
+$blockquote-font-size: 2em;
 $blockquote-footer-font-size:1.3em;
 
 @import "../libs/bootstrap/scss/bootstrap.scss";
@@ -215,8 +215,9 @@ $blockquote-footer-font-size:1.3em;
     text-shadow: 0 3px 3px rgba(228, 8, 8, 0.4);
 }
 
-.fotos-array {
-    height: 48em;
+.tamano {
+    height: 40em;
+
 }
 
 .primera-mayus:first-letter {

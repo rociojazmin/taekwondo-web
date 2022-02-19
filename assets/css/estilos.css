@@ -591,7 +591,7 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 3.5em;
+  font-size: 2em;
 }
 
 .blockquote > :last-child {
@@ -12179,8 +12179,8 @@ fieldset:disabled .btn {
   text-shadow: 0 3px 3px rgba(228, 8, 8, 0.4);
 }
 
-.fotos-array {
-  height: 48em;
+.tamano {
+  height: 40em;
 }
 
 .primera-mayus:first-letter {
