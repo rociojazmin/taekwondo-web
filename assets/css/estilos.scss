@@ -115,9 +115,13 @@ $blockquote-footer-font-size:1.3em;
 }
 
 #nosotros-cards article {
-    width: 18em;
-    // background-color: rgba($color: #ffd862, $alpha: 1.0);
+    width: 18rem;
 }
+
+.bg-nosotros {
+    background-color: rgba($color: #fcd45e, $alpha: 1.0);
+}
+
 
 // NOSOTROS: animacion
 

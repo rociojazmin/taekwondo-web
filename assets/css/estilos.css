@@ -12045,7 +12045,11 @@ fieldset:disabled .btn {
 }
 
 #nosotros-cards article {
-  width: 18em;
+  width: 18rem;
+}
+
+.bg-nosotros {
+  background-color: #fcd45e;
 }
 
 .fadeinleft {
