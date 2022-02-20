@@ -46,18 +46,14 @@ document.getElementById("imagenAlAzar").src = imagenElegida;
 // Generador de frases
 
 function generate() {
-    var frases = ["Si caíste ayer, ponte en pie hoy",
+    var frases = [
         "La fortaleza no llega de la capacidad física. Llega de una voluntad indomable",
-        "La manera más efectiva de hacerlo, es hacerlo",
-        "Puedo, luego existo",
-        "Si vas paso a paso y con confianza, puedes llegar lejos",
         "Hoy haré los que otros no harán, para mañana conseguir los que otros no pueden",
-        "Si tienes miedo de fallar, probablemente falles",
-        "Gana si puedes, pierde si es necesario, pero ¡nunca abandones!",
-        "Tu mayor oponente no es la otra persona. Es la naturaleza humana",
-        "Los ganadores nunca se rinden y los que se rinden nunca ganan",
-        "Para aprender a triunfar primero tienes que aprender a fallar"
+        "La adversidad hace que algunos hombres se rompan; otros rompen sus límites",
+        "Nunca digas nunca. Porque los límites, como el miedo, a menudo son sólo una ilusión",
+        "Algunas personas quieren que algo ocurra, otras sueñan con qué pasará, otras hacen que suceda"
     ]
+
     var frase_random = Math.floor(Math.random() * frases.length);
     document.getElementById('result').innerHTML = "<figure class='text-center'><blockquote class='blockquote'> <p class='w-auto'>" + frases[frase_random] + "</p> </blockquote> <figcaption class='blockquote-footer mb-4'>¡Sumate a Taekwondo Eita!</figcaption></figure>";
 }

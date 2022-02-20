@@ -10,8 +10,9 @@ $carousel-dark-caption-color:red;
 $carousel-indicator-active-bg:red;
 
 // variables generador de contenidos
-$blockquote-font-size: 2em;
-$blockquote-footer-font-size:1.3em;
+$blockquote-font-size: 1.5em;
+$blockquote-footer-font-size:1em;
+$blockquote-footer-color:rgb(56, 56, 56);
 
 @import "../libs/bootstrap/scss/bootstrap.scss";
 
@@ -191,7 +192,8 @@ $blockquote-footer-font-size:1.3em;
 }
 
 #motivate article p {
-    text-shadow: 0 3px 3px rgba(228, 8, 8, 0.4);
+    // text-shadow: 0 3px 3px rgba(255, 255, 255, 0.8);
+    color: black !important;
 }
 
 .texto-encima {
@@ -211,13 +213,12 @@ $blockquote-footer-font-size:1.3em;
     content: "\2014\00A0";
 }
 
-.text-shadow {
-    text-shadow: 0 3px 3px rgba(228, 8, 8, 0.4);
-}
+// .text-shadow {
+//     text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+// }
 
-.tamano {
-    height: 40em;
-
+.bg-azar {
+    background-color: rgba(228, 8, 8, 0.7);
 }
 
 .primera-mayus:first-letter {
