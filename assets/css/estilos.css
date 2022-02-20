@@ -602,7 +602,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 1em;
-  color: #383838;
+  color: #2b2a2a;
 }
 
 .blockquote-footer::before {
@@ -11969,6 +11969,10 @@ fieldset:disabled .btn {
   padding-bottom: 0;
 }
 
+#padding-navbar section a img {
+  width: 4.3em;
+}
+
 #fondo-nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -12193,9 +12197,5 @@ fieldset:disabled .btn {
 
 .footerArt {
   width: 15%;
-}
-
-.logo-navbar {
-  width: 75;
 }
 /*# sourceMappingURL=estilos.css.map */
