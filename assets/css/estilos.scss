@@ -220,8 +220,13 @@ $blockquote-footer-color:rgb(43, 42, 42);
     background-color: rgba(228, 8, 8, 0.7);
 }
 
+// CONTACTANOS
 
+#contactanos {
+    background-color: rgba(246, 246, 246, 255);
+}
 
+// TEXTO
 
 .primera-mayus:first-letter {
     text-transform: uppercase;
@@ -232,10 +237,11 @@ $blockquote-footer-color:rgb(43, 42, 42);
 }
 
 
-
 .fs-7 {
     font-size: .95rem !important;
 }
+
+
 
 .footerArt {
     width: 15%;

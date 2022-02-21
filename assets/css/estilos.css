@@ -12183,6 +12183,10 @@ fieldset:disabled .btn {
   background-color: rgba(228, 8, 8, 0.7);
 }
 
+#contactanos {
+  background-color: #f6f6f6;
+}
+
 .primera-mayus:first-letter {
   text-transform: uppercase;
 }
