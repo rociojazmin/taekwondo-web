@@ -12200,7 +12200,7 @@ fieldset:disabled .btn {
 }
 
 .bg-footer {
-  background-color: #c72b2b;
+  background-color: rgba(0, 0, 0, 0.89);
 }
 
 .footerArt {
