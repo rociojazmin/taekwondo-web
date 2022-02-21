@@ -12199,6 +12199,10 @@ fieldset:disabled .btn {
   font-size: .95rem !important;
 }
 
+.bg-footer {
+  background-color: #c72b2b;
+}
+
 .footerArt {
   width: 15%;
 }
