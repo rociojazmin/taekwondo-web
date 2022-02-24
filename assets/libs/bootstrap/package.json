@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "npm-run-all --parallel watch docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-rtl css-minify",
@@ -143,9 +142,6 @@
   ],
   "hugo-bin": {
     "buildTags": "extended"
-=======
-    "build": "purgecss --css assets/css/estilos.css --content index.html -o assets/css/estilos-purga.css"
->>>>>>> 9fe1cfa1401c63f642f1b4232e567f0de5d18fb5
   },
   "keywords": [],
   "author": "",
@@ -153,9 +149,4 @@
   "dependencies": {
     "bootstrap": "^5.1.3"
   }
-<<<<<<< HEAD
 }
-=======
-}
- 
->>>>>>> 9fe1cfa1401c63f642f1b4232e567f0de5d18fb5
