@@ -1,0 +1,15 @@
+{
+  "name": "final_programacion_miramont",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "purga": "purgecss --css assets/css/estilos.css --content index.html assets/js/logica.js -o assets/css/estilo-purga.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
