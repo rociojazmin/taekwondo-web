@@ -76,13 +76,13 @@ function enviarFormulario() {
     // switch genero
     switch (genero) {
         case "el":
-            cuerpoConsulta = `Señor ${nombre}, su consulta se envio con exito!`;
+            cuerpoConsulta = `Señor ${nombre}, su consulta se envió con éxito!`;
             break;
         case "ella":
-            cuerpoConsulta = `Señora ${nombre}, su consulta se envio con exito!`;
+            cuerpoConsulta = `Señora ${nombre}, su consulta se envió con éxito!`;
             break;
         default:
-            cuerpoConsulta = `${nombre}, su consulta se envio con exito!`;
+            cuerpoConsulta = `${nombre}, su consulta se envió con éxito!`;
             break;
     }
     if (suscribirse) {
